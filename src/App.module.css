@@ -1,0 +1,76 @@
+/* App.module.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.offlineBanner {
+  background: linear-gradient(90deg, #04060f, #080d1e);
+  border-bottom: 1px solid rgba(45, 122, 238, 0.25);
+  color: var(--blue-lite);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+}
+
+.main {
+  flex: 1;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 2rem 1.5rem;
+  width: 100%;
+}
+
+.sectionTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.75rem;
+}
+
+.pagination {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.pageBtn {
+  background: var(--ink-3);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  color: var(--cream);
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.2s var(--ease);
+}
+
+.pageBtn:hover { border-color: var(--blue); color: var(--blue-lite); }
+
+.pageInfo {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-top: 4rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer a { color: var(--blue-lite); text-decoration: none; }
+
+@media (max-width: 640px) {
+  .main { padding: 1.25rem 1rem; }
+}
